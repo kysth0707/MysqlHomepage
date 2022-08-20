@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 확인</title>
+    <link rel="stylesheet" href="css/css.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../main_account/js/cookie.js"></script>
+	<script src="./js/comment.js"></script>
+	<script src="./js/view.js"></script>
+</head>
+<body>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>글 확인</strong>
+            <p>글을 확인할 수 있습니다.</p>
+        </div>
+        <div class="board_view_wrap">
+            <div class="board_view">
+                <div class="title" id = "Title">
+                    ?
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd id = "Num">?</dd>
+                    </dl>
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd id = "Writer">?</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd id = "Date">?</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회</dt>
+                        <dd id = "Lookup">?</dd>
+                    </dl>
+                </div>
+                <div class="cont" id = "Content">
+                    ?
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="list.html" class="on">목록</a>
+				<a href="#" class="on" onclick="DeleteWriting()">삭제하기</a>
+                <!-- <a href="edit.html">수정</a> -->
+            </div>
+			<textarea placeholder="내용 입력" id = "CommentData"></textarea>
+			<button type="button" onclick="AddComment()">댓글 작성하기</button>
+			<div id = "comments"></div>
+        </div>
+    </div>
+</body>
+</html>

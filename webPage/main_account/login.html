@@ -1,0 +1,33 @@
+<html lang = "ko">
+	<head>
+		<meta charset="utf-8">
+		<title>로그인</title>
+		<link rel = "stylesheet" href = "style.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./js/cookie.js"></script>
+		<script src = "./js/login.js" language = "JavaScript"></script>
+	</head>
+	<body>
+		<section class="login-form">
+			<h1 id = "top">LOGIN</h1>
+			<form action="">
+				<div class = "int-area">
+					<input type="text" name = "id" id = "id-input" autocomplete="off" required>
+					<label for="id">ID</label>
+				</div>
+				<div class = "int-area">
+					<input type="password" name = "pw" id = "pw-input" autocomplete="off" required>
+					<label for="id">PASSWORD</label>
+				</div>
+				<div class = "btn-area">
+					<button id="btn" type = "button" onclick="OnLoginButtonClick()">LOGIN</button>
+				</div>
+			</form>
+			<div class="caption">
+				<a href="register.html">회원가입</a><br>
+				<a href="forgotPW.html">비밀번호를 잊으셨나요?</a>
+				<br><a href="main.html">돌아가기</a>
+			</div>
+		</section>
+	</body>
+</html>

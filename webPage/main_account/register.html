@@ -1,0 +1,35 @@
+<html lang = "ko">
+	<head>
+		<meta charset="utf-8">
+		<title>MySQL Register</title>
+		<link rel = "stylesheet" href = "style.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src = "./js/register.js" language = "JavaScript"></script>
+	</head>
+	<body>
+		<section class="login-form">
+			<h1 id = "top">REGISTER</h1>
+			<form action="">
+				<div class = "int-area">
+					<input type="text" name = "id" id = "id-input" autocomplete="off" required>
+					<label for="id">ID</label>
+				</div>
+				<div class = "int-area">
+					<input type="password" name = "pw" id = "pw-input" autocomplete="off" required>
+					<label for="id">PASSWORD</label>
+				</div>
+				<div class = "int-area">
+					<input type="password" name = "pw" id = "pw-again" autocomplete="off" required>
+					<label for="id">PASSWORD AGAIN</label>
+				</div>
+				<div class = "btn-area">
+					<button id="btn" type = "button" onclick="OnLoginButtonClick()">REGISTER</button>
+				</div>
+			</form>
+			<div class="caption">
+				<a href="login.html">로그인</a>
+				<br><a href="main.html">돌아가기</a>
+			</div>
+		</section>
+	</body>
+</html>

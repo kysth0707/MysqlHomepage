@@ -1,0 +1,20 @@
+<html lang = "ko">
+	<head>
+		<meta charset="utf-8">
+		<title>메인 페이지</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./js/cookie.js"></script>
+		<script src = "./js/account.js" language = "JavaScript"></script>
+	</head>
+	<body>
+		<div style="text-align : center; padding : 25% 0;">
+			<a href="../writing/list.html">게시판 목록</a><br>
+			<br><br><br>
+			<a href="register.html">회원가입</a><br>
+			<a href="login.html">로그인</a><br>
+			<button id = "lgout" type = "button" onclick='delCookie("ID");delCookie("token");window.location.reload();'>로그아웃</button>
+			<br><br><br><br>
+			<div id = "acc">내 계정 : 로그인 필요</div>
+		</div>
+	</body>
+</html>
