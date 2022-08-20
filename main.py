@@ -1,5 +1,3 @@
-from socket import timeout
-from tokenize import Token
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 import DBmodule
@@ -73,4 +71,20 @@ def k(WritingNum, ID, Token):
 # cd "C:\Users\th070\Desktop\mysql_test\6 글쓰기"
 # uvicorn main:app --reload
 
+
+from threading import Thread
+
+
+def RunWebserver():
+	import os
+
+	os.system('cd {}'.format(os.getcwd()))
+	os.system('python -m http.server 8080')
+
+Temp = Thread(target=RunWebserver)
+Temp.start()
+
+
 uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
