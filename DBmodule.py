@@ -1,5 +1,3 @@
-from ast import expr_context
-from glob import glob
 import time
 import random
 import pymysql

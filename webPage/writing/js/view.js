@@ -9,7 +9,7 @@ $( document ).ready(function() {
 function LoadContents(Num)
 {
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://127.0.0.1:8000/writingcontent/" + Num
+	var theUrl = "http://nojam-homepage.kro.kr:8000/writingcontent/" + Num
 	xmlHttp.open( "GET", theUrl, true);
 
 

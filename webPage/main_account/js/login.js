@@ -36,7 +36,7 @@ function OnLoginButtonClick(){
 
 		Waiting();
 
-		var url = "http://127.0.0.1:8000/login/" + $('#id-input').val() + "/" + $('#pw-input').val();
+		var url = "http://nojam-homepage.kro.kr:8000/login/" + $('#id-input').val() + "/" + $('#pw-input').val();
 		SendLoginRequest(url, $('#id-input').val(), $('#pw-input').val());
 	}
 }
@@ -104,7 +104,7 @@ function LoginSuccess(ID, PW)
 
 	setCookie("ID", ID, 1);
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://127.0.0.1:8000/refreshtoken/" + ID + "/" + PW
+	var theUrl = "http://nojam-homepage.kro.kr:8000/refreshtoken/" + ID + "/" + PW
 	xmlHttp.open( "GET", theUrl, true);
 
 
