@@ -38,7 +38,7 @@ function OnLoginButtonClick(){
 
 		Waiting();
 
-		var url = "http://192.168.68.116:8000/register/" + $('#id-input').val() + "/" + $('#pw-input').val();
+		var url = "http://127.0.0.1:8000/register/" + $('#id-input').val() + "/" + $('#pw-input').val();
 		SendLoginRequest(url);
 	}
 }

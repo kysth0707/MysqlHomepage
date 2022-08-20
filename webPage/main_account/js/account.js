@@ -5,7 +5,7 @@ function IsLoginSuccess()
 	if(typeof(token) == 'undefined'){return false;}
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://192.168.68.116:8000/comparetoken/" + getCookie("ID") + "/" + token;
+	var theUrl = "http://127.0.0.1:8000/comparetoken/" + getCookie("ID") + "/" + token;
 	xmlHttp.open( "GET", theUrl, true);
 
 

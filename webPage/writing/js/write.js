@@ -31,7 +31,7 @@ function Write()
 
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://192.168.68.116:8000/addwriting/"+ID+"/"+Token+"/"+Title+"/"+Content+"/"
+	var theUrl = "http://127.0.0.1:8000/addwriting/"+ID+"/"+Token+"/"+Title+"/"+Content+"/"
 	xmlHttp.open( "GET", theUrl, true);
 
 	xmlHttp.onreadystatechange = function(){
@@ -41,7 +41,7 @@ function Write()
 			{
 				alert("작성 성공!");
 
-				var link = "http://192.168.68.116:8080/webPage/writing/list.html";
+				var link = "http://127.0.0.1:8080/webPage/writing/list.html";
 				location.href = link;
 				location.replace(link);
 				window.open(link);

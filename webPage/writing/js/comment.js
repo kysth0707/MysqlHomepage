@@ -30,7 +30,7 @@ function AddComment()
 
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://192.168.68.116:8000/addcomment/"+WritingNum+"/"+ID+"/"+Token+"/"+Comments+"/"
+	var theUrl = "http://127.0.0.1:8000/addcomment/"+WritingNum+"/"+ID+"/"+Token+"/"+Comments+"/"
 	console.log(theUrl);
 	xmlHttp.open( "GET", theUrl, true);
 
@@ -75,7 +75,7 @@ function LoadComments()
 	// var WritingNum = 0;
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://192.168.68.116:8000/getcomment/"+WritingNum
+	var theUrl = "http://127.0.0.1:8000/getcomment/"+WritingNum
 	xmlHttp.open( "GET", theUrl, true);
 
 	xmlHttp.onreadystatechange = function(){
@@ -101,7 +101,7 @@ function DeleteWriting()
 	var Token = getCookie("token");
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://192.168.68.116:8000/deletecomment/" + WritingNum +"/"+ ID +"/"+ Token
+	var theUrl = "http://127.0.0.1:8000/deletecomment/" + WritingNum +"/"+ ID +"/"+ Token
 	xmlHttp.open( "GET", theUrl, true);
 
 

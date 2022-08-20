@@ -3,7 +3,7 @@ function setCookie(cName, cValue, cDay){
 	expire.setDate(expire.getDate() + cDay);
 	cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
 	if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
-	cookies += 'domain = 192.168.68.116;'
+	cookies += 'domain = 127.0.0.1;'
 	document.cookie = cookies;
 }
 	
