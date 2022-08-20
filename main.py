@@ -66,6 +66,8 @@ def j(WritingNum, ID, Token, Comment):
 
 @app.get('/deletecomment/{WritingNum}/{ID}/{Token}')
 def k(WritingNum, ID, Token):
+	if Token[0] == '"':
+		Token = Token[1:len(Token) - 1]
 	return DBmodule.DeleteContent(WritingNum, ID, Token)
 
 # cd "C:\Users\th070\Desktop\mysql_test\6 글쓰기"

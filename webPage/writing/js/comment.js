@@ -96,6 +96,12 @@ function LoadComments()
 
 function DeleteWriting()
 {
+	if(!confirm("정말 삭제하시겠습니까?"))
+	{
+		return;
+	}
+
+
 	var WritingNum = getCookie("Writing");
 	var ID = getCookie("ID");
 	var Token = getCookie("token");
@@ -108,10 +114,14 @@ function DeleteWriting()
 	xmlHttp.onreadystatechange = function(){
 		if(this.status == 200 && this.readyState == this.DONE)
 		{
+			console.log(this.responseText);
 			if(this.responseText == "true")
 			{
 				alert("삭제 완료!");
-				window.location.reload();
+				var link = "http://nojam-homepage.kro.kr:8080/webPage/writing/list.html";
+				location.href = link;
+				location.replace(link);
+				window.open(link);
 			}
 			else
 			{

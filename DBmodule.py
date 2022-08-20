@@ -250,6 +250,11 @@ def AddWriting(ID, Token, Title, Content):
 
 
 def GetWritings(StartNum = 0, Limit = 5, WithContent = False): # 글 제목, 작성자, 조회 등만 가져옴
+	if (WithContent):
+		Value = GetData(f"SELECT * FROM writings WHERE Num = {StartNum};")
+		Value = int(Value[0]['Lookup']) + 1
+		Command(f"UPDATE writings SET Lookup = {Value} WHERE Num = {StartNum};")
+
 	ReturnData = []
 	for i in range(StartNum, StartNum + Limit):
 		try:
@@ -260,7 +265,7 @@ def GetWritings(StartNum = 0, Limit = 5, WithContent = False): # 글 제목, 작
 				ReturnData.append(Data)
 		except:
 			pass
-
+	
 	return ReturnData
 
 #=============================================================
