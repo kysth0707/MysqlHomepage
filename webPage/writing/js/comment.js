@@ -107,7 +107,7 @@ function DeleteWriting()
 	var Token = getCookie("token");
 
 	var xmlHttp = new XMLHttpRequest();
-	var theUrl = "http://nojam-homepage.kro.kr:8000/deletecomment/" + WritingNum +"/"+ ID +"/"+ Token
+	var theUrl = "http://nojam-homepage.kro.kr:8000/deletecontent/" + WritingNum +"/"+ ID +"/"+ Token
 	xmlHttp.open( "GET", theUrl, true);
 
 
