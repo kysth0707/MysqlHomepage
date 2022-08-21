@@ -1,7 +1,2 @@
-0. MySQL 열기
-
-1. cmd 열기
-3. uvicorn main:app --reload
-
-4. vsc 새 터미널 열기
-6. python -m http.server 8080
+HTML, Javascript, CSS, Python, Mysql 을 활용하여 만든 홈페이지 입니다
+웹 페이지는 배포된 것을 사용하였습니다.
